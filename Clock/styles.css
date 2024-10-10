@@ -1,0 +1,11 @@
+.header-master {
+    height: 10%;
+    background-color: black;
+    color: white;
+    position: center;
+}
+
+
+.header-items{
+    list-style-type: none;
+}

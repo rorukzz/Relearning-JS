@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;  /* Ensures that the height covers the full viewport */
+    margin: 0;     /* Removes default margin */
+    padding: 0;    /* Removes default padding */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Stacks flex items vertically */
+    font-family: 'Roboto', sans-serif;
+}
+
+.current-country {
+    border: 1px solid;
+    border-color: red ;
+    padding: 15px;
+}
