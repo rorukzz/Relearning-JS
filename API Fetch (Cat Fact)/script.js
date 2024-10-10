@@ -10,7 +10,7 @@ async function fetchCatFacts() {
         setTimeout(() => {
             button.disabled = false;
             button.textContent = 'Refresh Cat Fact';
-        }, 300000); // 5 minutes
+        }, 0);
     }
     isFirstPress = false;  // Update the flag after the first press
 
