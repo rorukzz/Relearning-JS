@@ -1,6 +1,6 @@
 # JavaScript Project Ideas
 
-### 1. Weather App (API Integration)
+### 1. Weather App (API Integration) [ x ]
 - **Skills**: DOM manipulation, API fetch, asynchronous JavaScript
 - **Details**: Create a weather app that fetches weather data based on a user’s location or input. Use a weather API like OpenWeather.
 - **Challenges**: Add features like 5-day forecast, error handling, and local storage to remember the last city searched.

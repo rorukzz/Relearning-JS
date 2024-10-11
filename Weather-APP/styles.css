@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box; /* Makes sure padding and borders are included in the element's total width and height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Keep your desired font */
+}
+
+html, body {
+    height: 100%;  /* Ensures that the height covers the full viewport */
+    margin: 0;     /* Removes default margin */
+    padding: 0;    /* Removes default padding */
+    display: flex; /* Use flex on body for center alignment */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.weather-container {
+    text-align: center; /* Center align text for current weather */
+    margin-bottom: 20px; /* Space below current weather */
+    padding: 20px; /* Padding around the weather container */
+    border: 1px solid #ccc; /* Optional border for better separation */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background for current weather */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+    padding: 20px;
+    gap: 20px; /* Space between cards */
+}
+
+.future-card {
+    background-color: #ffffff; /* Use white for contrast */
+    border: 1px solid #ccc; /* Border for card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 15px; /* Inner spacing */
+    width: 150px; /* Fixed width for cards */
+    text-align: center; /* Center text */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.future-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
