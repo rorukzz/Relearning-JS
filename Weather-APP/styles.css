@@ -46,3 +46,10 @@ html, body {
 .future-card:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+.header {   
+    height: 8%;
+    padding-top: 10px;
+    background-color: grey;
+    width: 100%;
+}

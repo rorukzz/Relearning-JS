@@ -14,7 +14,7 @@ function addTask() {
 
         taskInput.value = '';  // Clear the input field
 
-        console.log(tasks)
+        localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 }
 
@@ -22,7 +22,9 @@ function clearTasks() {
     tasks = [] // Clearing tasks array
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild)
-    } // While there is a child(task) in the taskList element, remove it. 
+    } // While there is a child(task) in the taskList element, remove it.
+
+    localStorage.removeItem('tasks')
 }
 
 
