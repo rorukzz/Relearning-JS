@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecurePay Integration</title>
+  <!-- SecurePay UI Script -->
+  <script id="securepay-ui-js" src="https://payments-stest.npe.auspost.zone/v3/ui/client/securepay-ui.min.js"></script>
+  <!-- Link to external JavaScript file -->
+  <script src="js/securepay.js" defer></script>
+  <style>
+    #securepay-ui-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>SecurePay Payment</h1>
+  <!-- Container for SecurePay UI -->
+  <div id="securepay-ui-container"></div>
+  <button id="submit-button">Submit Payment</button>
+</body>
+</html>

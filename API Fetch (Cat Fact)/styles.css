@@ -1,16 +1,28 @@
+/* General Reset */
 * {
-    box-sizing: border-box; /* Makes sure padding and borders are included in the element's total width and height */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Ensure full height for layout */
 html, body {
-    height: 100%;  /* Ensures that the height covers the full viewport */
-    margin: 0;     /* Removes default margin */
-    padding: 0;    /* Removes default padding */
+    height: 100%; /* Ensures the height covers the full viewport */
+    margin: 0;    /* Removes default margin */
+    display: flex; /* Flexbox layout for body */
+    flex-direction: column; /* Column direction for header, main, footer */
 }
 
+/* Wrapper container to ensure footer stays at bottom */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push footer to the bottom */
+    min-height: 100vh; /* Ensures the wrapper is at least the full height of the viewport */
+}
+
+/* Header Styling */
 .header {
     width: 100%;
     height: 7%;
@@ -22,7 +34,9 @@ html, body {
     justify-content: center; /* Centers horizontally in the flex container */
 }
 
+/* Main Fact Container */
 .fact-container {
+    flex: 1; /* Ensures the main content takes up remaining space */
     padding-top: 4rem;
     display: flex; /* Enables flexbox layout */
     justify-content: center; /* Centers horizontally */
@@ -33,11 +47,10 @@ html, body {
     text-align: center;
 }
 
+/* Button Styling */
 .fact-container button {
-    display: block; /* Makes the button a block-level element, which takes the full width available */
-    padding-top: 20px; /* Adds space above the button's content */
-    margin-top: 20px; /* Adds space above the button itself, separating it from elements above */
-    /* Additional styling */
+    display: block; /* Makes the button a block-level element */
+    margin-top: 20px; /* Adds space above the button */
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
     border: none; /* No border */
@@ -45,4 +58,50 @@ html, body {
     cursor: pointer; /* Pointer on hover */
     font-size: 16px; /* Text size */
     padding: 8px 16px; /* Padding inside the button */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover and Focus State for Button */
+.fact-container button:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #e2e8f0; /* Light gray border */
+    background-color: #f9fafb; /* Light background color */
+    gap: 1.5rem;
+}
+
+.footer-title {
+    color: #1e293b; /* Slate-800 */
+    font-weight: 600;
+    font-size: 0.875rem; /* Small text */
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links a {
+    color: #334155; /* Slate-700 */
+    font-size: 0.875rem; /* Small text */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+    color: #64748b; /* Slate-500 */
 }

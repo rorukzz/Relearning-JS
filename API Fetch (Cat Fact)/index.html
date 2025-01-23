@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Fact</title>
+    <title>Cat Facts</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <p>CatFacts.com</p>
-    </header>
+    <div class="wrapper">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="site-title">CatFacts.com</h1>
+        </header>
 
-    <div class="fact-container">
-        <h1 id="catFact"></h1>
-        <button class="refresh-button" id="refresh-fact">Refresh Cat Fact</button>
+        <!-- Main Content Section -->
+        <main class="fact-container">
+            <h2 id="catFact">Welcome to Cat Facts!</h2>
+            <button class="refresh-button" id="refresh-fact">Refresh Cat Fact</button>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p class="footer-title">&copy; 2023 CatFacts.com. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">License</a></li>
+                <li><a href="#">Contribute</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </footer>
     </div>
 
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

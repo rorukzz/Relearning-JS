@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatroom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    #chatroom {
+      width: 90%;
+      max-width: 400px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    #messages {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      border-bottom: 1px solid #ccc;
+    }
+    .message {
+      margin-bottom: 10px;
+    }
+    .message .username {
+      font-weight: bold;
+    }
+    .message .content {
+      margin-left: 5px;
+    }
+    #input-area {
+      display: flex;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    #username, #message {
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      flex: 1;
+    }
+    #send {
+      padding: 10px;
+      border: none;
+      background: #007BFF;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #send:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="chatroom">
+    <div id="messages"></div>
+    <div id="input-area">
+      <input type="text" id="username" placeholder="Your name" />
+      <input type="text" id="message" placeholder="Your message" />
+      <button id="send">Send</button>
+    </div>
+  </div>
+
+  <script src="chatroom.js"></script>
+</body>
+</html>
